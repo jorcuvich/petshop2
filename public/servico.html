@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas Funcionais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="imagens/logologin.ico" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+    <div class="header-icon">
+        <img src="imagens/logologin.png">
+    </div>
+
+    <div class="tabs">
+        <button class="tab-button bot1" onclick="window.location.href='agendamento.html'">agendamento</button>
+        <button class="tab-button bot1" onclick="window.location.href='consulta.html'">consulta</button>
+        <button class="tab-button bot2" onclick="window.location.href='cliente.html'">cliente</button>
+        <button class="tab-button bot2" onclick="window.location.href='pet.html'">cliente-pet</button>
+        <button class="tab-button bot3" onclick="window.location.href='servico.html'">serviços</button>
+        <button class="tab-button bot3" onclick="window.location.href='funcionario.html'">funcionario</button>
+    </div>
+
+    <div class="user-icon">
+        <a href="index.html"><img src="imagens/profile.png"></a>
+    </div>   
+</header>
+<main class="cadastroservico">
+    <div class="servico">
+        <h1>Cadastro Serviço</h1>
+        <form id="Servicos">
+            <div class="servicos_div">
+
+                <input type="text" id="nome_servico" placeholder="Nome de serviço:" required>
+                <br><br>
+                <input type="text" id="preco_servico" placeholder="Preço de serviço:" required>
+                <br><br>
+                <input type="text" id="descricao" placeholder="Descriçao de serviço:" required>
+            
+    
+                 <div class="Servico_botoes">
+                    <button type="button" onclick="cadastrarServico()">Cadastrar</button>
+                    <button type="reset">Cancelar</button>
+                 </div>
+            </div>
+        </form>
+    </div>
+</main> 
+
+<footer class="footer">
+    <div class="footer-left">
+        <img class="butterfly-icon" src="imagens/butterfly-icon.png" alt="Borboleta" class="icon">
+        <p>Pet daffara está sempre <br>preocupado com o bem <br>estar de seu pet</p>
+        
+    </div>
+    <div class="footer-right">
+        <div class="social-icons">
+            <img src="imagens/facebook.png">
+            <img src="imagens/instagram.png">
+            <img src="imagens/twitter.png" >
+        </div>
+        <p>petdaffara.@gmail.com</p>
+        <p>+5545667343432</p>
+    </div>
+</footer>
+</html>
